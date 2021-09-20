@@ -1,7 +1,11 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import "./index.css"
-import Homepage from './homepage.js'
-import NTrip from './NewTrip.js'
+
+import Homepage from './pages/homepage.js'
+import Param from './pages/Parameters.js'
+import nTrip from './pages/NewTrip.js'
+import oTrip from './pages/OpenTrip.js'
+
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css'
@@ -10,12 +14,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav>
           <Switch>
             <Route exact path='/' component={Homepage} />
-            <Route path='/' component={NTrip} />
+            <Route path='/parameters' component={Param} />
+            <Route path='/new_trip' component={nTrip} />
+            <Route path='/open_trip' component={oTrip} />
           </Switch>
-        </nav>
       </div>
     </Router>
   );
