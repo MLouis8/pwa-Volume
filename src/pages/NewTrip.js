@@ -14,13 +14,14 @@ function New_trip() {
     return (
     <div>
         <h1>New Trip</h1>
-        <p>Plate Number</p>
-        <label classname='datePick'>
-            Departure date 
-            <DayPicker/>
-        </label>
+        <hr class="Hline"></hr>
+        <div className="NToptions">
+        <p>Plate Number :</p>
+        <p>Departure date : <DayPicker/></p>
         <NumberForm/>
-        <button onClick={tBack}>return</button>
+        </div>
+        
+        <button className="returnB" onClick={tBack}>return</button>
     </div>
     );
 }

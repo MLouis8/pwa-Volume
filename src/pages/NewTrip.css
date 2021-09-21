@@ -1,11 +1,13 @@
-body {
-    background: rgb(213, 211, 236, 0.3);
-}
-
-h1 {
-    text-align: center;
-}
-
-.datePick {
-    position: relative;
+.NToptions {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+    border-color:rgb(235, 227, 227);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
 }

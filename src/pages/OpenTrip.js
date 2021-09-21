@@ -11,6 +11,7 @@ function Open_trip() {
     return (
         <div>
             <h1>Open trip</h1>
+            <hr class="Hline"></hr>
             <button onClick={tBack}>return</button>
         </div>
     )

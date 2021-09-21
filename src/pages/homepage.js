@@ -17,10 +17,11 @@ function Home() {
     <div>
             <img src={logo} className="Wfp-logo" alt="logo" />
             <h1 className="Title">Volume calculator</h1>
+            <hr class="titleLine"></hr>
             <div>
-                <p><button className="b1" onClick={NTrip}>New trip</button></p>
-                <p><button className="b2" onClick={OTrip}>Open trip</button></p>
-                <p><button className="b3" onClick={Parameters}>Parameters</button></p>
+                <button className="b1" onClick={NTrip}>New trip</button>
+                <button className="b1" onClick={OTrip}>Open trip</button>
+                <button className="b1" onClick={Parameters}>Parameters</button>
             </div>
             <img src={sync} className="Sync-button" alt="sync" />
     </div>

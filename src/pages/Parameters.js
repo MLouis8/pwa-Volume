@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { useHistory } from "react-router-dom"
 
 import "./Parameters.css"
@@ -11,11 +10,13 @@ function Parameters() {
 
     return (
         <div>
-        <h1>Parameters</h1>
-        <h3>Locations</h3>
-        <h3>Vehicles</h3>
-        <button onClick={tBack}>return</button>
-
+            <h1>Parameters</h1>
+            <hr class="Hline"></hr>
+            <div className="options">
+                <p>Vehicles</p>
+                <p>Locations</p>
+            </div>
+            <button onClick={tBack}>return</button>
         </div>
     )
 }

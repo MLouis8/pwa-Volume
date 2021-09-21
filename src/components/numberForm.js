@@ -1,4 +1,5 @@
 import React from 'react'
+import "./numberForm.css"
 
 class NumberForm extends React.Component {
     constructor(props) {
@@ -13,8 +14,13 @@ class NumberForm extends React.Component {
       return (
         <form>
             <label>
-            Number of destination points 
-            <input type="number" value={this.state.value} onChange={this.handleChange} />
+            Number of destination points :
+            <input
+              type="number"
+              value={this.state.value}
+              onChange={this.handleChange}
+              className="Dnumber"
+            />
             </label>
         </form>
       );
