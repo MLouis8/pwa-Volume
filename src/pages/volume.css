@@ -1,0 +1,23 @@
+.volumeForm {
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 2px;
+    border-color: gray;
+
+    height: fit-content;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 1em;
+}
+
+.fromLabel {
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+}
