@@ -1,8 +1,21 @@
 .Title {
-  margin-left: -35%;
+  margin-right: 50vw;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
   font-size: x-large;
+}
+
+@media (max-width: 460px) {
+    .Title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+@media (min-width:1000px) {
+  .Title {
+    margin-right: 25%;
+  }
 }
 
 .titleLine {
@@ -11,11 +24,32 @@
   margin-right: 15%;
 }
 
+@media (max-width: 460px) {
+  .titleLine {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .titleLine {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+}
+
 .Wfp-logo {
   height:       10vh;
   position: relative;
   top:          15px;
   left:         70%;
+}
+
+@media (max-width: 460px) {
+  .Wfp-logo {
+    height: 8vh;
+    left: 80%
+  }
 }
 
 .Sync-button {

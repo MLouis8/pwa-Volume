@@ -11,7 +11,7 @@ function Parameters() {
     return (
         <div>
             <h1>Parameters</h1>
-            <hr class="Hline"></hr>
+            <hr className="Hline"></hr>
             <div className="options">
                 <p>Vehicles</p>
                 <p>Locations</p>

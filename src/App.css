@@ -21,4 +21,21 @@ button {
 
 .returnB {
   margin-top: 5%;
+  padding-left: 7px;
+  padding-right:7px;
+  padding-top: 2px;
+}
+
+.Hline {
+  color: rgb(190, 178, 178, 0.6);
+  margin-bottom: 2em;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+@media (max-width: 460px) {
+  .Hline {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
 }

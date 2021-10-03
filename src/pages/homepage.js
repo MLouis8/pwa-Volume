@@ -17,7 +17,7 @@ function Home() {
     <div>
             <img src={logo} className="Wfp-logo" alt="logo" />
             <h1 className="Title">Volume calculator</h1>
-            <hr class="titleLine"></hr>
+            <hr className="titleLine"></hr>
             <div>
                 <button className="b1" onClick={NTrip}>New trip</button>
                 <button className="b1" onClick={OTrip}>Open trip</button>

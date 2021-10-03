@@ -1,28 +1,40 @@
 import React from 'react'
+
 import NumberForm from "../components/numberForm.js"
 import DayPicker from "../components/day-picker.js"
-
-import { useHistory } from "react-router-dom"
+import Destinations from '../components/destinations.js'
+import Return from '../components/return.js';
 
 import './NewTrip.css'
 
-function New_trip() {
+class New_trip extends React.Component {
 
-    const history = useHistory();
-    const tBack = () => history.push('/');
+    state = {
+        number: 0,
+    }
 
-    return (
-    <div>
-        <h1>New Trip</h1>
-        <hr class="Hline"></hr>
-        <div className="NToptions">
-        <p>Plate Number :</p>
-        <p>Departure date : <DayPicker/></p>
-        <NumberForm/>
-        </div>
-        
-        <button className="returnB" onClick={tBack}>return</button>
-    </div>
-    );
+    handleCallback = (destNumber) => {
+        this.setState({ number: destNumber})
+    }
+
+    render() {
+        const {number} = this.state;
+        return (
+            <div>
+                <h1>New Trip</h1>
+                <hr className="Hline"></hr>
+
+                <div className="NToptions">
+                <p>Plate Number :</p>
+                Departure date : <DayPicker/>
+                <NumberForm parentCallback={this.handleCallback}/>
+                </div>
+                <Destinations number={number} />
+                <Return/>
+            </div>
+
+        );
+    }
 }
+
 export default New_trip;
