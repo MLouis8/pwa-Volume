@@ -13,11 +13,18 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
 
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1.3em;
 }
 
-.fromLabel {
+.vLabel {
     font-family: 'Lucida Sans';
     font-weight: bold;
+    white-space: pre;
+}
+
+.temp {
+    text-align: center;
 }
