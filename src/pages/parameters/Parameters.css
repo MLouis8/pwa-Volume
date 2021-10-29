@@ -1,0 +1,16 @@
+.options {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 20px;
+    border-color:rgb(235, 227, 227);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: bold;
+}
+
+.paramButton {
+    background-color: aqua;
+}
