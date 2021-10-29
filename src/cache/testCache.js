@@ -2,6 +2,7 @@ const TEST_CACHE = "TEST_CACHE"
 
 // cleanup time
 const ONE_WEEK = 1000 * 60 * 60 * 24 * 7
+const TWO_WEEKS = ONE_WEEK * 2
 
 const currentTime = () => {
     return Date.now()

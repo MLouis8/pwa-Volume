@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
-import '../pages/NewTrip.css'
+import '../App.css'
 
 export default function Return() {
     const history =  useHistory();
