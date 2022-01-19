@@ -59,7 +59,7 @@ function Volume() {
                 </p>
             </form>
             <button onClick={storedVolume(volume)}>Add another volume</button>
-            <p className="temp" >Total Volume {volume} m3</p>
+            <p className="temp" >Total Volume {Math.floor(volume*100)/100} m3</p>
             <button>Destination summary</button>
             <button onClick={tripSum}>Trips summary</button>
         </div>
